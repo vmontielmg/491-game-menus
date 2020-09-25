@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Creepster&family=Dhurjati&family=Electrolize&family=Germania+One&family=Metal+Mania&family=Press+Start+2P&family=Russo+One&family=Secular+One&display=swap');
+/* font-family: 'Creepster', cursive;
+font-family: 'Dhurjati', sans-serif;
+font-family: 'Electrolize', sans-serif;
+font-family: 'Germania One', cursive;
+font-family: 'Metal Mania', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Russo One', sans-serif; */
+
+
+body {
+    background-color: black;
+    background-image: url("images/square-dungeon-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+.game-title, .play-title, .cust-title {
+    font-family: 'Metal Mania', cursive;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 90px;
+    color: white;
+    text-shadow: 2px 2px 32px #000000;
+}
+
+.cust-title {
+    font-size: 75px;
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    background-color: transparent;
+    margin: 1em 0em;
+}
+
+button:hover {
+    border-color: yellow;
+}
+
+.btn-group-vertical {
+    width: 75%;
+    height: 100%;
+    padding-left: 25%;
+    padding-bottom: 15%;
+}
+
+.main-menu {
+    background-color: antiquewhite;
+    padding: 5% 30%;
+    height: 100%;
+    width: 100%;
+}
+
