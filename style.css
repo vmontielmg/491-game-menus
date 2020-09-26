@@ -7,15 +7,14 @@ font-family: 'Metal Mania', cursive;
 font-family: 'Press Start 2P', cursive;
 font-family: 'Russo One', sans-serif; */
 
-
-body {
+.body {
     background-color: black;
     background-image: url("images/square-dungeon-bg.jpg");
-    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: auto;
     animation: fadeInAnimation ease 3s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
@@ -151,12 +150,32 @@ span:hover {
     color: green;
 }
 
-.in-game {
-    width: auto;
+.in-g-body {
+    background-image: url(images/top-down-char.png), url(images/square-dungeon-bg.jpg);
+    background-position: center bottom, center bottom;
+    background-repeat: no-repeat;
+    width: 100%;
     height: auto;
+    animation: none;
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    width: 50%;
+    text-align: center;
+    color: black;
+    height: auto;
+    
+    padding-left: 30%;
+}
+
+.ws-body {
     background-image: url(images/top-down-char.png), url(images/square-dungeon-bg.jpg);
     background-position: center bottom, left bottom;
     background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    
     animation: none;
 }
-
