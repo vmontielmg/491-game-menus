@@ -11,7 +11,7 @@ font-family: 'Russo One', sans-serif; */
 body {
     background-color: black;
     background-image: url("images/square-dungeon-bg.jpg");
-    height: 100%;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +28,7 @@ body {
         opacity: 1; 
     } 
 } 
-.game-title, .play-title, .cust-title {
+.game-title, .play-title {
     font-family: 'Metal Mania', cursive;
     width: 100%;
     text-align: center;
@@ -40,7 +40,20 @@ body {
 }
 
 .cust-title {
+    font-family: 'Metal Mania', cursive;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    text-align: center;
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+    /* padding-top: 2%; */
+    /* padding-bottom: 2%; */
     font-size: 75px;
+    color: white;
+    text-shadow: 2px 2px 32px #000000;
+    
 }
 
 .btn {
@@ -48,6 +61,13 @@ body {
     color: white;
     background-color: transparent;
     margin: 1em 0em;
+}
+
+#rt-mm {
+    background-color: red;
+    color: white;
+    margin-left: 1em;
+    margin-top: 1%;
 }
 
 button:hover {
@@ -62,9 +82,65 @@ button:hover {
 }
 
 .main-menu {
-    background-color: antiquewhite;
+    background-color: black;
     padding: 5% 30%;
     height: 100%;
     width: 100%;
 }
 
+  .left {
+    float: left;
+    height: auto;
+    width: 20%;
+    text-align: right;
+    margin-top: 10%;
+    /* background-color: aliceblue; */
+  }
+
+  .middle {
+    float: left;
+    width: 60%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    /* background-color: aliceblue; */
+  }
+
+  .player {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+  }
+
+  .right {
+    float: right;
+    width: 20%;
+    height: auto;
+    margin-top: 10%;
+    /* background-color: aliceblue; */
+  }
+
+  .cust-btn-group {
+      text-align: center;
+      float: bottom;
+  }
+
+.btn-btn-danger {
+    background-color: red;
+    color: white;
+    margin-left: 1em;
+    margin-top: 1%;
+}
+
+span {
+    font-size: 50px;
+    color: yellow;
+    border-color: transparent;
+}
+
+span:hover {
+    color: yellow;
+    border-color: transparent;
+}
