@@ -144,3 +144,8 @@ span:hover {
     color: yellow;
     border-color: transparent;
 }
+
+.progress-bar {
+    color: green;
+}
+
