@@ -145,7 +145,18 @@ span:hover {
     border-color: transparent;
 }
 
-.progress-bar {
+.progress {
+    width: 50%;
+    margin-left: 25%;
     color: green;
+}
+
+.in-game {
+    width: auto;
+    height: auto;
+    background-image: url(images/top-down-char.png), url(images/square-dungeon-bg.jpg);
+    background-position: center bottom, left bottom;
+    background-repeat: no-repeat;
+    animation: none;
 }
 
