@@ -150,32 +150,117 @@ span:hover {
     color: green;
 }
 
-.in-g-body {
-    background-image: url(images/top-down-char.png), url(images/square-dungeon-bg.jpg);
-    background-position: center bottom, center bottom;
+.npc-body {
+    background-image: url("images/square-dungeon-bg.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: middle center;
     width: 100%;
     height: auto;
-    animation: none;
     background-color: black;
+    padding-left: 2%;
 }
 
-.grid-container {
-    display: grid;
-    width: 50%;
-    text-align: center;
-    color: black;
-    height: auto;
-    
-    padding-left: 30%;
+.npc-dialog {
+    color: white;
+    background-color: goldenrod;
+    text-align: fill;
+    position: relative;
+    border-radius: .4em;
+    width: 60%;
+    padding: 1% 2%;
+    float: right;
+    margin-right: 5%;
+    margin-top: 10%;
+    font-family: 'Electrolize', sans-serif;
+    font-size: large;
+    vertical-align: middle;
 }
+
+.npc-dialog:after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: goldenrod;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -10px;
+}
+
+/* .grid-container {
+    display: inline-grid;
+    text-align: center;
+    color: white;
+    height: auto;
+    background-color: antiquewhite;
+
+} */
+
 
 .ws-body {
     background-image: url(images/top-down-char.png), url(images/square-dungeon-bg.jpg);
     background-position: center bottom, left bottom;
     background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    animation: none;
+}
+
+.hud-body {
+    /* background-image: url(images/top-down-char.png), url(images/square-dungeon-bg.jpg);
+    background-position: center bottom, left bottom;
+    background-repeat: no-repeat;
     width: auto;
     height: auto;
     
-    animation: none;
+    animation: none; */
+    background-image: url(images/square-dungeon-bg.jpg);
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.plr {
+    margin-left: 35%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 3;
+    grid-row: 2;
+    text-align: center;
+    color: white;
+    background-color: antiquewhite;
+}
+
+.shop {
+    display: flex;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    float: right;
+    margin-right: 15%;
+    text-align: center;
+    width: 50%;
+}
+
+.shopper {
+    float: right;
+    margin-right: 10%;
+    width: 50%;
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    border-radius: 1em;
+    border-style: double; 
+    border-width: 2em;
+    border-color: #000000;
+    background-color: goldenrod;
 }
